@@ -157,6 +157,11 @@ nav a {
 	/* remove the underline */
 	/* make the font's size 1.2rem */
 	/* make the font bolder (600) */
+	color: var(--dk-gray);
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 600;
 }
 
 nav a:hover {
@@ -181,32 +186,37 @@ p {
 	/* add an indent on the first line of 2rem */
 	/* center those paragraphs (not the text) on the page */
 	padding: 0.5rem;
+	max-width: 55ch;
+	text-indent: 2rem;
+	margin: 0 auto;
 }
 
-a{
+a {
     color: var(--plum);
 }
 
-a:hover{
+a:hover {
     color: var(--lime);
 }
 
-dl, ol, main ul{
+dl, ol, main ul {
 	/* limit the width of these lists to 55 characters */
+	max-width: 55ch;
 	margin: 1rem auto;
 }
 
-dt{
+dt {
 	/* make this font display in bold weight */
+	font-weight: bold;
 }
 
-dt::before{
+dt::before {
 	color: var(--amethyst);
 	content: "\2605";
 	padding-right: 4px;
 }
 
-footer{
+footer {
 	padding: 1rem;
 	background-color: var(--plum);
 	color: var(--white);
@@ -220,12 +230,12 @@ footer{
 
     LEARN MORE ABOUT RESPONSIVE DEVELOPMENT IN GIT414
 */
-@media screen and (min-width: 450px){
+@media screen and (min-width: 450px) {
 	nav{
 		width: fit-content;
 	}
 		
-	nav ul{
+	nav ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 0.5rem;
