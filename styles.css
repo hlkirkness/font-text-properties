@@ -115,36 +115,39 @@ header {
 	border-bottom: 8px solid var(--teal);
 }
 
-h1, h2, h3{
+h1, h2, h3 {
 	/* center align the text */
 	/* use a web font here (instructions on page) */
 	/* make the heading text all small caps style */
 	text-align: center;
+	font-family: var(--heading-fonts);
+	font-variant: small-caps;
 }
 
-h2{
+h2 {
 	margin: 0;
 	padding: 4px;
 	text-decoration: dotted underline var(--teal) 4px;
 }
 
-h3{
+h3 {
 	margin: 0;
 	padding: 4px;
 	/* add an underline like the one on the h2s to the h3s, but make it solid and mint color */
+	text-decoration: solid underline var(--mint) 4px;
 }
 
-nav{
+nav {
 	margin: 0 auto;
 	padding: 0.5rem 0;
 }
 
-nav ul{
+nav ul {
 	list-style-type: none;
 	padding-left: 0;
 }
 
-nav a{
+nav a {
 	/* make these display as block level elements */
 	margin: 1rem auto;
 	padding: 1rem;
@@ -156,24 +159,24 @@ nav a{
 	/* make the font bolder (600) */
 }
 
-nav a:hover{
+nav a:hover {
     color: var(--dk-gray);
 	background-color: var(--teal);
 }
 
-main{
+main {
 	padding: 2rem 1rem;
 }
 
-section{
+section {
 	padding: 1rem;
 }
 
-#fonts, #text{
+#fonts, #text {
 	border-bottom: 4px solid var(--plum);
 }
 
-p{
+p {
 	/* set a max-width of 55 characters */
 	/* add an indent on the first line of 2rem */
 	/* center those paragraphs (not the text) on the page */
